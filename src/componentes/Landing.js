@@ -26,6 +26,7 @@ class Landing extends React.Component {
                         <div className="barra">
                             <nav>
                                 <a className="boton" href="Landing.js">Inicio</a>
+                                <a className="boton" href="https://gamestry.com/courses/?game=clash+royale&gclid=Cj0KCQjw09HzBRDrARIsAG60GP8mB1c7hu0b6sI447NTc6kc4WJ3mz_aOYRH-ZHt6Ot6ihiIAQTj9awaArhmEALw_wcB">Cursos</a>
                                 <a className="boton" href="https://gamestry.com/subscribe">Suscribirse</a>
                                 <a className="boton" href="https://gamestry.com/home">Visitanos</a>
                             </nav>
@@ -65,6 +66,7 @@ class Landing extends React.Component {
                             <div className="form2">
                                 <div className="borde">
                                     <form className="formulario" action="">
+                                        <h3>Pre-Inscribete</h3>
                                         <p>Nombre y Apellido: </p>
                                         <input type="text" className="separe"></input> <br/>
                                         <p>Correo Electronico: </p>
@@ -85,7 +87,7 @@ class Landing extends React.Component {
 
                 <flooter>
                     <div className="final">
-                    <h3>Copyright 2019 - All Rigth Reserved</h3>
+                    <h4>Copyright 2020 - All Rigth Reserved</h4>
                     </div>
                 </flooter>
 
