@@ -14,6 +14,22 @@ import cuchii from '../imagenes/cuchii.png'
 import princesa from '../imagenes/princesa.png'
 
 class Landing extends React.Component {
+    handleChange = e => {    
+        console.log({      
+            name: e.target.name,      
+            value: e.target.value,    
+        });  
+    };  
+    
+    handleClick = e => {    
+        console.log('Button was clicked');  
+    };  
+    
+    handleSubmit = e => {    
+        e.preventDefault();    
+        console.log('Form was submitted');  
+    };
+
     render(){
         return(
             <body>
@@ -65,17 +81,17 @@ class Landing extends React.Component {
                             </div>
                             <div className="form2">
                                 <div className="borde">
-                                    <form className="formulario" action="">
+                                    <form className="formulario">
                                         <h3>Pre-Inscribete</h3>
-                                        <p>Nombre y Apellido: </p>
-                                        <input type="text" className="separe"></input> <br/>
-                                        <p>Correo Electronico: </p>
-                                        <input type="text" className="separe"></input> <br/>
-                                        <p>Codigo de Creador: </p>
-                                        <input type="text" className="separe"></input> <br/>
+                                        <label>Nombre y Apellido: </label>
+                                        <input  onClick={ this.handleClick} type="text" className="separe" name= "Nombre Y Apellido"></input> <br/>
+                                        <label>Correo Electronico: </label>
+                                        <input  onClick={ this.handleClick} type="text" className="separe" name= "Correo"></input> <br/>
+                                        <label>Codigo de Creador: </label>
+                                        <input  onClick={ this.handleClick} type="text" className="separe" name= "Codigo"></input> <br/>
                                         
                                         <p className= "enviar">
-                                            <input type="submit" className="btn btn-green" value="Enviar"></input> <br/>
+                                            <button  onClick={this.handleClick} className="btn btn-green">Enviar</button> <br/>
                                         </p>
 
                                     </form>

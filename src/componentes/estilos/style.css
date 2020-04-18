@@ -350,6 +350,11 @@ p{
     text-align: center;
 }
 
+label{
+    font-family: 'Sen', sans-serif;
+    margin-left: 26%;
+}
+
 .separe{
     margin-top: 4%;
     margin-bottom: 9%;
