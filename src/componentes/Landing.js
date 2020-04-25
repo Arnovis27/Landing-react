@@ -14,18 +14,18 @@ import cuchii from '../imagenes/cuchii.png'
 import princesa from '../imagenes/princesa.png'
 
 class Landing extends React.Component {
-    handleChange = e => {    
+    handleChange = (e) => {    
         console.log({      
             name: e.target.name,      
             value: e.target.value,    
         });  
     };  
     
-    handleClick = e => {    
+    handleClick = (e) => {    
         console.log('Button was clicked');  
     };  
     
-    handleSubmit = e => {    
+    handleSubmit = (e) => {    
         e.preventDefault();    
         console.log('Form was submitted');  
     };
@@ -51,7 +51,8 @@ class Landing extends React.Component {
                 </div>
 
                 <div className="importante">
-                    <h1>¡CURSOS ONLINE!</h1>
+                    <h1>Cursos</h1>
+                    <h2>Online</h2>
                 </div>
                 
                 <div className="centro">
@@ -67,7 +68,7 @@ class Landing extends React.Component {
 
                 <div className="abajo">
                     <div className="izquierda">
-                        <h2>APRENDE DE LOS MEJORES</h2>
+                        <h5>APRENDE DE LOS MEJORES</h5>
                         <div className="fotos">
                             <img className="ad" src= {adrian} alt="adrian piedra"/>
                             <img className="mal" src= {malcaide} alt="malcaide"/>
@@ -84,14 +85,14 @@ class Landing extends React.Component {
                                     <form className="formulario">
                                         <h3>Pre-Inscribete</h3>
                                         <label>Nombre y Apellido: </label>
-                                        <input  onClick={ this.handleClick} type="text" className="separe" name= "Nombre Y Apellido"></input> <br/>
+                                        <input  onClick={ this.handleClick} type="text" className="separe" name= "Nombre"></input> <br/>
                                         <label>Correo Electronico: </label>
                                         <input  onClick={ this.handleClick} type="text" className="separe" name= "Correo"></input> <br/>
                                         <label>Codigo de Creador: </label>
                                         <input  onClick={ this.handleClick} type="text" className="separe" name= "Codigo"></input> <br/>
                                         
                                         <p className= "enviar">
-                                            <button  onClick={this.handleClick} className="btn btn-green">Enviar</button> <br/>
+                                            <button  onClick={this.handleClick} type ="submit" value= "Submit" className="btn btn-green">Enviar</button> <br/>
                                         </p>
 
                                     </form>
@@ -100,12 +101,6 @@ class Landing extends React.Component {
                         </div>
                     </div>
                 </div>
-
-                <flooter>
-                    <div className="final">
-                    <h4>Copyright 2020 - All Rigth Reserved</h4>
-                    </div>
-                </flooter>
 
             </body>
         );
